@@ -116,7 +116,7 @@ def solve_rcpsp(data_file):
 
 def main():
     # Define directories
-    data_dir = Path("Convert/data/pack")
+    data_dir = Path("data")
     result_dir = Path("result")
     output_file = result_dir / "pack_no_bound_600s.csv"
 

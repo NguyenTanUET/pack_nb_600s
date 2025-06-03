@@ -20,10 +20,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/PyCharmProject/pack_nb_600s"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PyCharmProject\pack_nb_600s" />
+      <recent name="D:\PyCharmProject\pack_nb_600s\data" />
+      <recent name="D:\PyCharmProject\pack_nb_600s\result" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
