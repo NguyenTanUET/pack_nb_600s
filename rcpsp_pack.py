@@ -3,7 +3,7 @@
 """
 RCPSP solver using linear search from upper bound down to lower bound.
 This approach tries each makespan value sequentially to find the optimal solution.
-No time limit per makespan test - only overall 1200s limit.
+No time limit per makespan test - only overall 600s limit.
 """
 from docplex.cp.model import *
 import os
@@ -14,7 +14,7 @@ from google.cloud import storage
 import os
 
 # Thời gian tối đa cho mỗi instance
-TIME_PER_INSTANCE = 1200
+TIME_PER_INSTANCE = 600
 
 def solve_rcpsp_with_makespan_bound(data_file, target_makespan, time_remaining):
     """
@@ -180,7 +180,7 @@ def main():
     # Define directories
     data_dir = Path("data")
     result_dir = Path("result")
-    output_file = result_dir / "pack_with_bound_1200s.csv"
+    output_file = result_dir / "pack_with_bound_600s.csv"
 
     # Create result directory if it doesn't exist
     os.makedirs(result_dir, exist_ok=True)
@@ -259,8 +259,8 @@ def main():
     client = storage.Client()
     bucket = client.bucket(bucket_name)
 
-    local_path = "result/pack_with_bound_1200s.csv"
-    blob_name = f"results/{os.path.basename(local_path)}"  # ví dụ "results/pack_with_bound_1200s.csv"
+    local_path = "result/pack_with_bound_600s.csv"
+    blob_name = f"results/{os.path.basename(local_path)}"  # ví dụ "results/pack_with_bound_600s.csv"
 
     blob = bucket.blob(blob_name)
     blob.upload_from_filename(local_path)

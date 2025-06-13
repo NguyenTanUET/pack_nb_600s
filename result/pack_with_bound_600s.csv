@@ -1,4 +1,4 @@
 File name,LB,UB,Makespan,Status,Solve time (second)
-Pack001.data,9,23,9,optimal,4.17
-Pack002.data,14,32,14,optimal,4.79
-Pack003.data,10,29,10,optimal,4.97
+Pack001.data,9,23,23,feasible,0.65
+Pack002.data,14,32,32,feasible,0.57
+Pack003.data,10,29,29,feasible,0.61
